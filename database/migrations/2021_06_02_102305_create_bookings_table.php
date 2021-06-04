@@ -44,14 +44,13 @@ class CreateBookingsTable extends Migration
             $table->int('extra')->default(0);
             $table->int('guide')->default(0);
             $table->int('employee')->default(0);
-            $table->tinyInteger('status')->default(4;
+            $table->tinyInteger('status')->default(4);
             $table->tinyInteger('transport_confirmation')->default(4);
             $table->tinyInteger('reservation_confirmation')->default(4);
             $table->tinyInteger('nationality')->nullable();
             $table->tinyInteger('master_currency')->nullable();
             $table->varchar('confirmed_by')->nullable();
             $table->timestamps();
-
         });
     }
 

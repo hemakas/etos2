@@ -16,7 +16,7 @@ class CreateAttractionsJeepSuppliersTable extends Migration
         Schema::create('attractions_jeep_suppliers', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->foreignId('attractions_id')->constrained()->onDelete('cascade');
-            $table->foreignId('jeep_supplier_id')->constrained()->onDelete('cascade');
+            $table->foreignId('jeep_suppliers_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
