@@ -47,7 +47,7 @@ class CreateAttractionsTable extends Migration
             $table->text('steps');
             $table->text('clothing');
             $table->string('rest_room');
-            $table->string('brphotographyief');
+            $table->string('photography');
             $table->timestamps();
         });
     }
