@@ -49,7 +49,7 @@ class CreateBookingsTable extends Migration
             $table->tinyInteger('reservation_confirmation')->default(4);
             $table->tinyInteger('nationality')->nullable();
             $table->tinyInteger('master_currency')->nullable();
-            $table->varchar('confirmed_by')->nullable();
+            $table->text('confirmed_by')->nullable();
             $table->timestamps();
         });
     }
