@@ -22,7 +22,7 @@ class CreateBookingsTable extends Migration
             $table->string('agent_code')->nullable();
             $table->string('agent_name')->default('xx');
             $table->string('pax_name')->default('xx');
-            $table->integer('booking_type')->default('xx');
+            $table->string('booking_type')->default('xx');
             $table->string('booking_ref')->default('N/A');
             $table->string('arrival_date')->nullable();
             $table->string('departure_date')->nullable();
