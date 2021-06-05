@@ -15,6 +15,7 @@ class CreateBookingTypesTable extends Migration
     {
         Schema::create('booking_types', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('booking_type_name');
             $table->timestamps();
         });
     }
