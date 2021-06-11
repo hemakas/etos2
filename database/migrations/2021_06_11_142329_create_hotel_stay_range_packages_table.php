@@ -20,19 +20,19 @@ class CreateHotelStayRangePackagesTable extends Migration
             $table->foreign('hotel')->references('id')
                 ->on('hotels')
                 ->onDelete('cascade');
-            
+
             $table->unsignedBigInteger('hotel_stay_package_id');
             $table->foreign('hotel_stay_package_id')->references('id')
                 ->on('hotel_stay_packages')
                 ->onDelete('cascade');
-            
+
             $table->string('room_type');
 
             $table->unsignedBigInteger('meal_plan');
             $table->foreign('meal_plan')->references('id')
                 ->on('meal_plans')
                 ->onDelete('cascade');
-            
+
             $table->string('no_of_nights');
 
             $table->timestamps();
